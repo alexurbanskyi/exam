@@ -1,0 +1,32 @@
+.footer{
+   min-height: 265px;
+   background-color: #232323;
+&__logo{
+   font-size: 14px;
+   letter-spacing: 3px;
+   line-height: 26px;
+   color: #ffffff;
+   font-weight: 700;
+   font-family: "Josefin Sans";
+   padding-top: 120px;
+   text-align: center;
+   text-transform: uppercase;
+}
+&__description{
+   font-size: 16px;
+   letter-spacing: 2px;
+   line-height: 26px;
+   color: #ffffff;
+   font-family: "Josefin Sans";
+   text-align: center;
+   padding-top: 5px;
+}
+&__list{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   max-width: 190px;
+   padding: 20px 0;
+   margin: 0 auto; 
+}
+}

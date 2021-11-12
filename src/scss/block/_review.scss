@@ -1,0 +1,49 @@
+.review{
+   min-height: 725px;
+   background-image: url('../img/review-bgr.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: left;
+   
+
+.container{
+   margin: 0 auto;
+   padding: 0 10px;
+}
+
+&__title{
+   font-size: 36px;
+   line-height: 26px;
+   color: #ffffff;
+   font-weight: 400;
+   font-family: "Aleo";
+   text-align: center;
+   padding-top: 120px;
+}
+&__wrapper{
+   padding-top: 100px;
+   display: flex;
+   
+}
+&__description{
+   padding-left: 60px;
+   h2{
+      font-size: 28px;
+      line-height: 26px;
+      color: #fefefe;
+      font-family: "Josefin Sans";
+      padding-top: 35px;
+      text-transform: uppercase;
+
+   }
+   p{
+      padding-top: 35px;
+      font-size: 16px;
+      line-height: 26px;
+      color: #e8e8e8;
+      font-family: "Josefin Sans";
+      // font-family: "Font Awesome";---------------font find!!!!
+   }
+}
+
+}

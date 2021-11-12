@@ -23,6 +23,10 @@
 &__description{
    max-width: 540px;
    padding: 0 10px;
+@media screen and (max-width: 800px){
+   max-width: 100%;
+   text-align: center;
+}
 }
 
 &__title{
@@ -48,6 +52,10 @@
 &__foto{
    width: 100%;
    padding: 0 10px 0 10px;
+@media screen and (max-width: 800px){
+   position: absolute;
+   visibility: hidden;
+}
 }
 .foto1{
    padding-left: 75px;

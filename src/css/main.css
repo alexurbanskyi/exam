@@ -29,37 +29,112 @@ p {
   margin: 0;
 }
 
+.btn {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Aleo";
+  padding: 20px;
+  width: 220px;
+  background-color: #5474fd;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 800px) {
+  .btn {
+    margin: 0 auto;
+  }
+}
+
 .country {
-  min-height: 100vh;
+  min-height: 700px;
   background-image: url("../img/gr-1-bgr.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .country .container {
+  margin: 0 auto;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
+  padding-left: 10px;
+  padding-top: 50px;
+}
+@media screen and (max-width: 800px) {
+  .country .container {
+    padding: 0 10px;
+    min-height: 60vh;
+  }
 }
 .country__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 540px;
   background-color: rgba(35, 35, 35, 0.9);
   color: #e8e8e8;
   padding-left: 30px;
 }
+@media screen and (max-width: 800px) {
+  .country__wrapper {
+    max-width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
 .country__name {
   padding-top: 50px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 26px;
+  color: #e8e8e8;
+  font-family: "Josefin Sans";
 }
 .country__title {
-  padding: 50px 0;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  font-family: "Josefin Sans";
+  padding: 30px 0;
+}
+.country__description {
+  font-size: 16px;
+  line-height: 26px;
+  color: #e8e8e8;
+  font-family: "Josefin Sans";
+  padding-bottom: 50px;
+  padding-right: 10px;
+}
+@media screen and (max-width: 800px) {
+  .country__description {
+    text-align: center;
+  }
 }
 .country .btn {
-  padding: 45px 0;
+  margin-bottom: 50px;
+}
+
+.right {
+  background-image: url("../img/gr-2-bgr.jpg");
+}
+.right .container {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-right: 10px;
 }
 
 .header {
@@ -251,6 +326,12 @@ p {
   max-width: 540px;
   padding: 0 10px;
 }
+@media screen and (max-width: 800px) {
+  .choose__description {
+    max-width: 100%;
+    text-align: center;
+  }
+}
 .choose__title {
   padding-top: 20px;
   font-size: 30px;
@@ -274,6 +355,12 @@ p {
   width: 100%;
   padding: 0 10px 0 10px;
 }
+@media screen and (max-width: 800px) {
+  .choose__foto {
+    position: absolute;
+    visibility: hidden;
+  }
+}
 .choose .foto1 {
   padding-left: 75px;
   margin-bottom: 3px;
@@ -285,4 +372,87 @@ p {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
+}
+
+.review {
+  min-height: 725px;
+  background-image: url("../img/review-bgr.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+.review .container {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.review__title {
+  font-size: 36px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Aleo";
+  text-align: center;
+  padding-top: 120px;
+}
+.review__wrapper {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.review__description {
+  padding-left: 60px;
+}
+.review__description h2 {
+  font-size: 28px;
+  line-height: 26px;
+  color: #fefefe;
+  font-family: "Josefin Sans";
+  padding-top: 35px;
+  text-transform: uppercase;
+}
+.review__description p {
+  padding-top: 35px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #e8e8e8;
+  font-family: "Josefin Sans";
+}
+
+.footer {
+  min-height: 265px;
+  background-color: #232323;
+}
+.footer__logo {
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Josefin Sans";
+  padding-top: 120px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.footer__description {
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 26px;
+  color: #ffffff;
+  font-family: "Josefin Sans";
+  text-align: center;
+  padding-top: 5px;
+}
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 190px;
+  padding: 20px 0;
+  margin: 0 auto;
 }
