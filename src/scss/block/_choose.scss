@@ -1,0 +1,26 @@
+.choose{
+   min-height: 690px;
+   background: gray;;
+   margin: 0 auto;
+&__wrapper{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.container{
+   margin: 0 auto;
+}
+
+&__description{
+   max-width: 540px;
+}
+
+&__foto{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+}

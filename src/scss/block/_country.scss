@@ -1,0 +1,30 @@
+.country{
+   min-height: 100vh;
+   background-image: url('../img/gr-1-bgr.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+
+.container{
+   display: flex;
+   height: 100vh;
+   align-items: center; 
+   margin: 0 auto;
+}
+&__wrapper{
+   max-width: 540px;
+   background-color: rgba(35, 35, 35, 0.9);
+   color: #e8e8e8;
+   padding-left: 30px;
+   
+}   
+&__name{
+   padding-top: 50px;
+}
+&__title{
+   padding: 50px 0;
+}
+.btn{
+   padding: 45px 0;
+}
+}
