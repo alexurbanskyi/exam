@@ -19,23 +19,32 @@
    font-family: "Aleo";
    text-align: center;
    padding-top: 120px;
+
+@media screen and (max-width: 965px){
+   padding-top: 75px;
+   line-height: 60px;
+}
 }
 &__wrapper{
    padding-top: 100px;
    display: flex;
+@media screen and (max-width: 965px){
+   flex-direction: column;
+   text-align: center;
+   padding-top: 60px;
+}
    
 }
 &__description{
    padding-left: 60px;
    h2{
-      font-size: 28px;
-      line-height: 26px;
-      color: #fefefe;
-      font-family: "Josefin Sans";
-      padding-top: 35px;
-      text-transform: uppercase;
-
-   }
+   font-size: 28px;
+   line-height: 26px;
+   color: #fefefe;
+   font-family: "Josefin Sans";
+   padding-top: 35px;
+   text-transform: uppercase;
+}
    p{
       padding-top: 35px;
       font-size: 16px;
@@ -43,7 +52,15 @@
       color: #e8e8e8;
       font-family: "Josefin Sans";
       // font-family: "Font Awesome";---------------font find!!!!
-   }
+}
+@media screen and (max-width: 965px){
+      padding: 15px;
+}
+}
+img{
+@media screen and (max-width: 965px){
+      max-width: 90%;
+}
 }
 
 }

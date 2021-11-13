@@ -5,6 +5,7 @@
    color: #ffffff;
    font-weight: 400;
    font-family: "Aleo";
+   display: inline-block;
    padding: 20px;
    width: 220px;
    background-color: #5474fd;
@@ -13,4 +14,8 @@
 @media screen and (max-width: 800px){
    margin: 0 auto;
 }
-} 
+}
+.btn:hover{
+   background-color: black;
+}
+ 
