@@ -179,7 +179,42 @@
 }
 &__link:hover{
    background-color: rgb(36, 75, 248);
-
+}
+&__close-btn{
+   width: 30px;
+   height: 30px;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   // background-color: saddlebrown;
+   transition: all ease-in-out 0.5s;
+   span:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%,-50%);
+      width: 30px;
+      height: 4px;
+      background-color: white;
+      transform: rotate(45deg);
+   }
+   span::after{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%,-50%);
+      width: 30px;
+      height: 4px;
+      background-color: white;
+      transform: rotate(-45deg);
+   }
+}
+&__close-btn:hover{
+   transform: rotate(180deg);
 }
 }
 

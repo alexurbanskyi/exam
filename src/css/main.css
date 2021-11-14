@@ -361,6 +361,47 @@ a {
 .header .menu__link:hover {
   background-color: #244bf8;
 }
+.header .menu__close-btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+.header .menu__close-btn span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.header .menu__close-btn span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.header .menu__close-btn:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 .header .burger {
   position: absolute;
   bottom: 15px;
