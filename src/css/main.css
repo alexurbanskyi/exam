@@ -712,6 +712,13 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
+.work__icon a p {
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.work__icon p:hover {
+  color: #5474fd;
+}
 .work__icon img {
   width: 10vw;
 }
