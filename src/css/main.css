@@ -39,9 +39,11 @@ p {
   display: inline-block;
   padding: 20px;
   width: 220px;
-  background-color: #5474fd;
+  background-color: #274cf2;
   text-align: center;
   text-transform: uppercase;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 @media screen and (max-width: 800px) {
   .btn {
@@ -50,7 +52,15 @@ p {
 }
 
 .btn:hover {
-  background-color: black;
+  background-color: #51b4ed;
+}
+.btn:hover a {
+  color: black;
+}
+
+a {
+  -webkit-transition: color ease-in-out 0.8s;
+  transition: color ease-in-out 0.8s;
 }
 
 .country {
@@ -149,6 +159,7 @@ p {
   background-size: cover;
   background-position: left;
   position: relative;
+  z-index: 1;
 }
 .header__wrapper {
   display: -webkit-box;
@@ -255,15 +266,15 @@ p {
   width: 14px;
   margin: 0 auto;
 }
-.header__menu {
-  background-color: #3f6dc2;
+.header__nav {
+  background-color: #5474fd;
   margin: 0 auto;
   position: absolute;
   width: 100%;
   bottom: 0;
   left: 0;
 }
-.header__menu-wrapper {
+.header__nav-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,6 +304,12 @@ p {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 810px) {
+  .header__list {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 .header__link {
   padding-left: 40px;
   font-size: 14px;
@@ -301,6 +318,117 @@ p {
   font-weight: 400;
   font-family: "Aleo", serif;
   text-transform: uppercase;
+}
+.header .menu {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background-color: rgba(84, 116, 253, 0.95);
+  border-radius: 20px;
+}
+.header .menu__list {
+  list-style-type: none;
+  padding: 30px 15px 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 90%;
+}
+.header .menu__link {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px 0;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.header .menu__link:hover {
+  background-color: yellowgreen;
+}
+.header .burger {
+  position: absolute;
+  bottom: 15px;
+  right: 45px;
+  visibility: hidden;
+  opacity: 0;
+}
+@media screen and (max-width: 810px) {
+  .header .burger {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.header .burger__btn {
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  border-radius: 5px;
+  position: relative;
+}
+.header .burger__btn span {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.header .burger__btn span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  top: 13px;
+  left: 0px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.header .burger__btn span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  bottom: 13px;
+  left: 0px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.header .burger__btn:hover {
+  background-color: #4061f5;
+}
+.header .burger__btn:hover span::after {
+  background-color: #020202;
+  left: 5px;
+}
+.header .burger__btn:hover span::before {
+  background-color: #020202;
+  left: -5px;
+}
+.header .active {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .choose {
@@ -475,6 +603,7 @@ p {
   padding-top: 5px;
 }
 .footer__list {
+  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

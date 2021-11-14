@@ -6,6 +6,7 @@
    background-size: cover;
    background-position: left;
    position: relative;
+   z-index: 1;
    
 
 &__wrapper{
@@ -93,8 +94,8 @@
       margin: 0 auto;
    }
 }
-&__menu{
-   background-color: rgb(63, 109, 194);
+&__nav{
+   background-color: #5474fd;
    margin: 0 auto;
    position: absolute;
    width: 100%;
@@ -103,7 +104,7 @@
    
 }
 
-&__menu-wrapper{
+&__nav-wrapper{
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -126,6 +127,10 @@
 &__list{
    list-style-type: none;
    display: flex;
+@media screen and (max-width: 810px){
+   opacity: 0;
+   visibility: hidden;
+}
 
 }
 &__link{
@@ -137,8 +142,109 @@
    font-family: 'Aleo', serif;
    text-transform: uppercase;
 }
-  
-  
 
+.menu{
+   position: absolute;
+   z-index: 2;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 50%;
+   height: 50%;
+   background-color: rgb(84, 116, 253, 0.95);
+   border-radius: 20px;
+   
+// &__wrapper{
+//    position: relative;
+// }
 
+&__list{
+   list-style-type: none;
+   padding: 30px 15px 0 15px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   min-height: 90%;
+}
+&__link{
+   // background-color: yellowgreen;
+   width: 100%;
+   text-align: center;
+   font-size: 30px;
+   padding: 10px 0;
+   transition: all ease-in-out 0.3s;
+}
+&__link:hover{
+   background-color: yellowgreen;
+
+}
+}
+
+.burger{
+   position: absolute;
+   bottom: 15px;
+   right: 45px;  
+   visibility: hidden;
+   opacity: 0; 
+@media screen and (max-width: 810px){
+   opacity: 1;
+   visibility: visible;
+}
+&__btn{
+   width: 50px;
+   height: 50px;
+   transition: all ease-in-out 0.5s;
+   // border: 2px solid red;
+   border-radius: 5px;
+   position: relative;
+   span{
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 4px;
+      background-color: white;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+   span:before{
+      content: '';
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background-color: white;
+      top: 13px;
+      left: 0px;
+      transition: all ease-in-out 0.3s;
+   }
+   span::after{
+      content: '';
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background-color: white;
+      bottom: 13px;
+      left: 0px;
+      transition: all ease-in-out 0.3s;
+   }
+}
+&__btn:hover{
+   background-color: rgb(64, 97, 245);
+}
+&__btn:hover span::after{
+   background-color: #020202;
+   left: 5px;
+}
+&__btn:hover span::before{
+   background-color: #020202;
+   left: -5px;
+}
+}
+.active{
+   opacity: 0;
+   visibility: hidden;
+}
 } 
