@@ -231,6 +231,8 @@ a {
   text-align: left;
   padding: 17px 15px 13px 30px;
   border: 2px solid white;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 .header__btn a {
   padding-right: 10px;
@@ -242,6 +244,9 @@ a {
   text-align: center;
   text-transform: uppercase;
   font-family: "Aleo", serif;
+}
+.header__btn:hover {
+  background-color: #244bf8;
 }
 .header__scroll {
   display: -webkit-box;
@@ -656,4 +661,74 @@ a {
   max-width: 190px;
   padding: 20px 0;
   margin: 0 auto;
+}
+
+.work {
+  background-color: #333333;
+}
+.work .container {
+  margin: 0 auto;
+}
+.work__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+}
+.work__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: -20px;
+  padding-bottom: 40px;
+}
+.work__img {
+  max-width: 70%;
+}
+.work__img img {
+  width: 100%;
+}
+.work__icon a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.work__icon img {
+  width: 10vw;
+}
+.work__icon p {
+  font-size: 36px;
+  line-height: 26px;
+  color: #e8e8e8;
+  font-weight: 400;
+  font-family: "Aleo";
+}
+@media screen and (max-width: 710px) {
+  .work__icon p {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .work__icon p {
+    font-size: 20px;
+  }
 }

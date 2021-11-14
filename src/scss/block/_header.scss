@@ -64,6 +64,7 @@
    text-align: left;
    padding: 17px 15px 13px 30px;
    border: 2px solid white;
+   transition: all ease-in-out 0.3s;
    a{
       padding-right: 10px;
       font-size: 14px;
@@ -75,6 +76,9 @@
       text-transform: uppercase;
       font-family: 'Aleo', serif;
    }
+}
+&__btn:hover{
+   background-color: rgb(36, 75, 248) ;
 }
 &__scroll{
    display: flex;
