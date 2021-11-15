@@ -54,7 +54,9 @@
       font-family: "Josefin Sans";
       margin: 0;
       border: none;
+      
    }
+   input[placeholder]{text-overflow:ellipsis;}
 }
 &__btn{
    display: flex;
@@ -134,6 +136,7 @@
 @media screen and (max-width: 810px){
    opacity: 0;
    visibility: hidden;
+   display: contents;
 }
 
 }
@@ -185,6 +188,9 @@
    font-size: 30px;
    padding: 10px 0;
    transition: all ease-in-out 0.3s;
+@media screen and (max-width: 470px){
+   font-size: 19px;
+}
 }
 &__link:hover{
    background-color: rgb(36, 75, 248);
